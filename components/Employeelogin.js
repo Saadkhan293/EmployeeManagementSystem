@@ -37,7 +37,7 @@ export default function Employeelogin({navigation}) {
           <Text style={{ textAlign: "center" }}> Login</Text>
         </Icon>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.signupbutton} onPress={()=>navigation.navigate('Employee Sign up')}>
+      <TouchableOpacity style={styles.signupbutton} onPress={()=>navigation.navigate('Employee Sign up ')}>
         <Icon style={{ textAlign: "center" }} name="user">
           <Text style={{ textAlign: "center", fontWeight: "bold" }}>
             {" "}

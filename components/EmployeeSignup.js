@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
-export default function EmployeeSignup() {
+export default function EmployeeSignup({navigation}) {
   return (
     <View style={styles.container}>
       <Text
@@ -49,7 +49,7 @@ export default function EmployeeSignup() {
         placeholderTextColor="#CCCCCC"
         keyboardType="numeric"
       ></TextInput>
-      <TouchableOpacity style={styles.signupbutton}>
+      <TouchableOpacity style={styles.signupbutton} onPress={()=>navigation.navigate("Jobs")}>
         <Icon style={{ textAlign: "center" }} name="user">
           <Text style={{ textAlign: "center", fontWeight: "bold" }}>
             {" "}
